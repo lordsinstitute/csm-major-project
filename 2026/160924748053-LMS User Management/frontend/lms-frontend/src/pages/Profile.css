@@ -1,0 +1,101 @@
+.profile-page {
+  max-width: 640px;
+  margin: 40px auto;
+  padding: 0 24px 60px;
+}
+
+.profile-page h1 {
+  margin-bottom: 24px;
+}
+
+.profile-section {
+  background: var(--surface);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px var(--shadow-soft);
+  padding: 28px;
+  margin-bottom: 24px;
+}
+
+.profile-section h2 {
+  margin-top: 0;
+  margin-bottom: 6px;
+  font-size: 1.1rem;
+}
+
+.section-hint {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.section-label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--text);
+}
+
+.avatar-picker {
+  margin-bottom: 20px;
+}
+
+.avatar-options {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.avatar-option {
+  background: none;
+  border: 3px solid transparent;
+  border-radius: 50%;
+  padding: 2px;
+  line-height: 0;
+  transition: border-color 0.15s ease, transform 0.1s ease;
+}
+
+.avatar-option:hover {
+  transform: translateY(-2px);
+}
+
+.avatar-option.selected {
+  border-color: var(--primary);
+}
+
+.readonly-group input {
+  cursor: not-allowed;
+}
+
+.domain-chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.domain-chip {
+  background: var(--surface-alt);
+  color: var(--text);
+  border: 1px solid var(--border-strong);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+
+.domain-chip:hover {
+  border-color: var(--primary);
+}
+
+.domain-chip.selected {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+}
+
+.domain-chip.teaching.selected {
+  background: var(--success-text);
+  border-color: var(--success-text);
+}

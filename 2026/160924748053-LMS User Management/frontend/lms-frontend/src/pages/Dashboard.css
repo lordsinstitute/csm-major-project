@@ -1,0 +1,118 @@
+.dashboard {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 24px;
+}
+
+.dashboard-header {
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.dashboard-header h1 {
+  margin-bottom: 4px;
+}
+
+.dashboard-header p {
+  color: var(--text-muted);
+}
+
+.dashboard-header-text {
+  flex: 1;
+}
+
+.dashboard-edit-link {
+  background: var(--primary-soft-bg);
+  color: var(--primary-soft-text);
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.dashboard-top {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: var(--surface);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px var(--shadow-soft);
+  padding: 24px 28px;
+  margin-bottom: 20px;
+}
+
+.dashboard-top .avatar-svg {
+  flex-shrink: 0;
+}
+
+.dashboard-top-info h2 {
+  margin: 0 0 4px 0;
+}
+
+.dashboard-top-info p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  max-width: 480px;
+}
+
+.profile-card {
+  background: var(--surface);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px var(--shadow-soft);
+  padding: 28px;
+}
+
+.profile-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.profile-row:last-child {
+  border-bottom: none;
+}
+
+.profile-row .label {
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.profile-row .value {
+  font-weight: 600;
+}
+
+.badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.badge-admin { background: var(--danger-bg); color: var(--danger-text); }
+.badge-instructor { background: var(--warning-bg); color: var(--warning-text); }
+.badge-student { background: var(--primary-soft-bg); color: var(--primary-soft-text); }
+
+.domain-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: var(--primary-soft-bg);
+  color: var(--primary-soft-text);
+}
+
+.value-muted {
+  color: var(--text-muted);
+  font-style: italic;
+  font-weight: 400;
+}
